@@ -21,16 +21,25 @@ class Store:
         self.name = name
 
 
+class Item:
+
+    def __init__(self, name, description, price):
+        self._name = name
+        self._desc = description
+        self._price = price
+
+
 class Cart:
-    def __init__(self, name, ):
+    def __init__(self, item):
+        self._item = item
 
 
 class User:
-    def __init__(self, user_name, user_password, user_age, user_card):
-        self.user_name = user_name
-        self.user_password = user_password
-        self.user_age = user_age
-        self.user_card = user_card
+    def __init__(self, name, password, age, card):
+        self._name = name
+        self._password = password
+        self._age = age
+        self._card = card
 
 
 class Admin (User):
