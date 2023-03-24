@@ -12,8 +12,6 @@
 #     def __init__(self , label , color , price , wheels , drive):
 #         super().__init__(label, color, price, wheels)
 #         self.drive = drive
-#
-# class AirCraft(Transport) :
 
 
 class Store:
@@ -22,6 +20,10 @@ class Store:
 
     def getName(self):
         print(self.name)
+
+
+ATB = Store("ATB")
+print(ATB.getName())
 
 
 class Item:
@@ -46,8 +48,9 @@ class User:
 
 
 class Admin (User):
-    def __init__(self, name):
-        self._name = name
+    def __init__(self, name, password, age, card, isAdmin):
+        super().__init__(name, password, age, card)
+        self.isAdmin = isAdmin
 
 
 class Bag:
