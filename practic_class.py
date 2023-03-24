@@ -20,6 +20,9 @@ class Store:
     def __init__(self, name, ):
         self.name = name
 
+    def getName(self):
+        print(self.name)
+
 
 class Item:
 
@@ -44,6 +47,9 @@ class User:
 
 class Admin (User):
     def __init__(self, name, ):
+        self._name = name
 
 
 class Bag:
+    def __init__(self, name, ):
+        self._name = name
