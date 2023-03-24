@@ -46,10 +46,10 @@ class User:
 
 
 class Admin (User):
-    def __init__(self, name, ):
+    def __init__(self, name):
         self._name = name
 
 
 class Bag:
-    def __init__(self, name, ):
+    def __init__(self, name):
         self._name = name
