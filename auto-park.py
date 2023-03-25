@@ -37,9 +37,9 @@ class Smartphone (Device):
 # Single responsibility
 class StoreDB:
     _products = {
-        "laptops": [],
-        "smartphones": [],
-        "TV": []
+        "Sedan": [],
+        "Hatchback": [],
+        "Truck": [],
     }
 
     def getProducts(self):
@@ -76,7 +76,7 @@ store = Store(storeDB)
 
 products = store.storeDB.getProducts()
 
-TV = [
+tv = [
     TV("LG", "Germany", "100$", "TV", "18"),
     TV("Samsung", "Korea", "1000$", "TV", "22"),
 ]
